@@ -21,7 +21,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: wine-test
-      run: git clone node -v && npm -v && touch test2 && git config user.name "actions" && git config user.email "63111210+nthnchu@users.noreply.github.com" && git add . && git commit -m "It works" && git push "https://git:${{ secrets.GITHUB_TOKEN }}@github.com/nthnchu/actions-test.git" -u origin master
+      run: git clone https://git:${{ secrets.GITHUB_TOKEN }}@github.com/nthnchu/actions-test.git && node -v && npm -v && touch test2 && git config user.name "actions" && git config user.email "63111210+nthnchu@users.noreply.github.com" && git add . && git commit -m "It works" && git push  -u origin master
 
     # Runs a set of commands using the runners shell
    
