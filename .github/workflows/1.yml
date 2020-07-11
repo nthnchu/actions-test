@@ -22,7 +22,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: wine-test
-      run: wine -v
+      run: node -v && npm -v && touch test2 && git add . && git commit -m "It works" && git push -u origin master
 
     # Runs a set of commands using the runners shell
    
